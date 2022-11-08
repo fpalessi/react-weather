@@ -1,0 +1,25 @@
+:root {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+}
+body {
+  margin: 15px;
+  background-color: #cecece;
+}
+.switch {
+  display: flex;
+  width: 50vw;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.switch label {
+  margin: 20px;
+}
+#light {
+  background-color: #fff;
+}
+#dark {
+  background-color: #242424;
+  color: #fff;
+}
