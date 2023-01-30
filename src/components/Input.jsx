@@ -30,8 +30,8 @@ const Input = ({ onSearchChange }) => {
 
   return (
     <AsyncPaginate
-      placeholder="Busca una ciudad"
-      debounceTimeout={600}
+      placeholder="Busca el tiempo actual y previsión de una gran ciudad"
+      debounceTimeout={400}
       value={search}
       onChange={handleOnChange}
       loadOptions={loadOptions}

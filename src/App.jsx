@@ -10,7 +10,6 @@ import ReactSwitch from "react-switch";
 export const ThemeContext = createContext(null);
 
 const Container = styled.div`
-  width: 2%;
   margin: 0 auto;
   background-color: #fff;
   color: black;
@@ -22,7 +21,6 @@ const Container = styled.div`
   border-top-width: 2px;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.55),
     0 4px 6px -2px rgba(0, 0, 0, 0.35);
-
   width: 50%;
 
   @media (max-width: 768px) {

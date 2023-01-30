@@ -43,11 +43,18 @@ const DailyWeather = ({ data }) => {
               <span>
                 <img
                   src={`icons/${item.weather[0].icon}.png`}
-                  width={70}
+                  loading="lazy"
+                  width={50}
                   style={{ marginTop: "-20px" }}
                 />
               </span>
-              <span style={{ flex: "1 1 0%", textAlign: "right" }}>
+              <span
+                style={{
+                  flex: "1 1 0%",
+                  textAlign: "right",
+                  fontWeight: "500",
+                }}
+              >
                 {parseInt(item.main.feels_like - kelvin)}&deg; - {""}
                 {item.weather[0].description}
               </span>

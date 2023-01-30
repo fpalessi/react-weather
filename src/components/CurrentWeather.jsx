@@ -28,15 +28,19 @@ const CurrentWeather = ({ data }) => {
       <City>
         <p style={{ textAlign: "left", flex: "1 1 0%" }}>{data.city}</p>
         <span style={{ marginTop: "-10px" }}>
-          <img src={`icons/${data.weather[0].icon}.png`} />
+          <img
+            src={`icons/${data.weather[0].icon}.png`}
+            height={80}
+            loading="lazy"
+          />
         </span>
-        <p style={{ textAlign: "right", flex: "1 1 0%" }}>
-          Hoy, {data.weather[0].description}
+        <p style={{ textAlign: "right", flex: "1 1 0%", fontWeight: "600" }}>
+          Ahora, {data.weather[0].description}
         </p>
       </City>
       <Temperature>
         <span style={{ margin: "0 auto", textAlign: "center" }}>
-          <span style={{ fontSize: "33px" }}>
+          <span style={{ fontSize: "33px", fontWeight: "600" }}>
             {parseInt(data.main.temp - kelvin)}ºC{" "}
           </span>
           <span
